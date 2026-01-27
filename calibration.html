@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karma Lab | Calibration Services</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <style>
+    .sidebar-card { position: sticky; top: 1rem; }
+    .sidebar-title { font-size: .95rem; letter-spacing: .02em; }
+    .service-pill{
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 999px;
+      padding: .35rem .65rem;
+      display: inline-flex;
+      gap: .35rem;
+      align-items: center;
+    }
+    .service-pill:hover { background: rgba(0,0,0,.03); }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+          <li><a class="nav-link" href="/home.html">Home</a></li>
+
+          <!-- Karma Trading -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/index.html" id="tradingDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Trading
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="tradingDropdown">
+              <li><a class="dropdown-item" href="/agents.html">Agents we represent</a></li>
+              <li><a class="dropdown-item" href="/index.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Contact Sales</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Lab -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="labDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Lab
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="labDropdown">
+              <li><a class="dropdown-item" href="/calibration.html">Calibration</a></li>
+              <li><a class="dropdown-item" href="/hvac.html">HVAC</a></li>
+              <li><a class="dropdown-item" href="/validation.html">Validation</a></li>
+              <li><a class="dropdown-item" href="/CleanRoomServices.html">Cleanroom Services</a></li>
+              <li><a class="dropdown-item" href="/accreditation&certification.html">Accreditation & Certifications</a></li>
+              <li><a class="dropdown-item" href="/karmalabHome.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Book a Service</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Steel -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="steelDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Steel
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="steelDropdown">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Product Range</a></li>
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Request a Quote</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-4 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="fw-bold">Calibration Services</h1>
+        <p class="text-muted mb-0">
+          Karma Lab provides precise, high-quality calibration services to ensure the accuracy, reliability,
+          and compliance of your instruments. Our services cover pressure, temperature, TOC, and a wide range
+          of measurement equipment, delivered by qualified specialists using traceable standards.
+          Click a category on the left to explore our calibration capabilities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two-column layout -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Sidebar -->
+        <aside class="col-12 col-lg-4">
+          <div class="card shadow-sm border-0 rounded-4 sidebar-card">
+            <div class="card-body p-3 p-md-4">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div>
+                  <div class="text-muted sidebar-title">SERVICE MENU</div>
+                  <h5 class="mb-0 fw-bold">Categories</h5>
+                </div>
+                <span class="badge text-bg-light border">On-site / In-lab</span>
+              </div>
+
+              <div class="accordion" id="servicesAccordion">
+
+                <!-- Pressure -->
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingPressure">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsePressure" aria-expanded="true" aria-controls="collapsePressure">
+                      Calibration for Pressure Devices
+                    </button>
+                  </h2>
+
+                  <div id="collapsePressure" class="accordion-collapse collapse show"
+                       aria-labelledby="headingPressure" data-bs-parent="#servicesAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-pressure-gauge">Pressure Gauge</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-pressure-calibrator">Pressure Calibrator</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-pressure-switch">Pressure Switch</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-pressure-transducer">Pressure Transducer</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-pressure-transmitter">Pressure Transmitter</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-vacuum-pressure-gauge">Vacuum Pressure Gauge</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-needle-valve-verification">Needle Valve Verification</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-diff-pressure-gauge">Diff. Pressure Gauge</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-diff-pressure-switch-verification">Diff. Pressure Switch Verification</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-differential-pressure-indicator-verification">Differential Pressure Indicator Verification</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Temperature -->
+                <div class="accordion-item border-0 mt-2">
+                  <h2 class="accordion-header" id="headingTemp">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTemp" aria-expanded="false" aria-controls="collapseTemp">
+                      Calibration for Temperature Devices
+                    </button>
+                  </h2>
+                  <div id="collapseTemp" class="accordion-collapse collapse"
+                       aria-labelledby="headingTemp" data-bs-parent="#servicesAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-digital-thermometers">Digital Thermometers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-glass-thermometers">Glass Thermometers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-thermocouple">Thermocouple</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-thermometers">Thermometers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-rtd-thermometers">RTD Thermometers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-dial-thermometers">Dial Thermometers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-temperature-bath">Temperature Bath</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-temperature-calibrators">Temperature Calibrators</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-infrared-thermometer">Infrared Thermometer</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- TOC -->
+                <div class="accordion-item border-0 mt-2">
+                  <h2 class="accordion-header" id="headingTOC">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTOC" aria-expanded="false" aria-controls="collapseTOC">
+                      Calibration for TOC (Total Organic Carbon) Systems
+                    </button>
+                  </h2>
+                  <div id="collapseTOC" class="accordion-collapse collapse"
+                       aria-labelledby="headingTOC" data-bs-parent="#servicesAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-online">Online TOC Analyzers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-lab">Laboratory TOC Analyzers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-portable">Portable / Field TOC</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-pw-wfi">PW / WFI TOC Systems</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-sensors">TOC Sensors / Probes</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-htc">High-Temperature Combustion TOC</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-uv">UV / Persulfate Oxidation TOC</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-toc-modes">TC / TIC / TOC / NPOC Modes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Other Equipment (NEW) -->
+                <div class="accordion-item border-0 mt-2">
+                  <h2 class="accordion-header" id="headingOther">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                      Calibration of Other Equipments
+                    </button>
+                  </h2>
+                  <div id="collapseOther" class="accordion-collapse collapse"
+                       aria-labelledby="headingOther" data-bs-parent="#servicesAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-ph">Calibration For pH Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-conductivity">Calibration For Conductivity Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-humidity-other">Calibration For Humidity Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-densitometer">Calibration For Densitometer devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-airspeed">Calibration For Air Speed Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-length-standards">Calibration For Length Standards</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-gauge-block">Calibration For Gauge Block</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-diameter-standards">Calibration For Diameter Standards</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-thermo-hygrometer">Calibration For Thermo-hygrometer</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-flowmeter-other">Calibration For Flow meter Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-standard-weights">Calibration For Standard Weights</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-time-measurement">Calibration For Time Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-tachometer">Calibration For Tachometer</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-hardness">Calibration For Hardness Measurement Devices</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-volumetric-flasks">Calibration For Volumetric Flasks</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-micropipette">Calibration For Micropipette</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-digital-caliber">Calibration For Digital Caliber</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-micrometer">Calibration For Micrometer</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-temp-rh-loggers">Calibration For Temperature and humidity Data Loggers</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-level-sensor">Calibration For Level Sensor</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-temp-loggers">Calibration For Temperature Data Loggers</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mt-4">
+                <a href="/calibration-contact.html" class="btn btn-success w-100">Book / Contact</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Content area -->
+        <main class="col-12 col-lg-8">
+
+          <!-- PRESSURE -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-pressure-gauge">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Pressure Gauge</h5>
+              <p class="text-muted mb-0">Dial / digital gauges across requested ranges with traceable certification.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-pressure-calibrator">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Pressure Calibrator</h5>
+              <p class="text-muted mb-0">Verification of portable and bench pressure calibrators used as reference tools.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-pressure-switch">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Pressure Switch</h5>
+              <p class="text-muted mb-0">Set-point verification, repeatability checks, and documentation support.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-pressure-transducer">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Pressure Transducer</h5>
+              <p class="text-muted mb-0">Accuracy verification and zero/span checks for pressure transducers.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-pressure-transmitter">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Pressure Transmitter</h5>
+              <p class="text-muted mb-0">4–20mA / digital transmitters calibration with optional loop checks.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-vacuum-pressure-gauge">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Vacuum Pressure Gauge</h5>
+              <p class="text-muted mb-0">Vacuum range verification for cleanroom and process applications.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-needle-valve-verification">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Needle Valve Verification</h5>
+              <p class="text-muted mb-0">Functional verification (leak/hold checks if required) — scope-dependent.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-diff-pressure-gauge">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Diff. Pressure Gauge</h5>
+              <p class="text-muted mb-0">Differential pressure gauge verification for HVAC, filters, and cleanrooms.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-diff-pressure-switch-verification">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Diff. Pressure Switch Verification</h5>
+              <p class="text-muted mb-0">Trip/set-point verification for differential pressure switches.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-4" id="svc-differential-pressure-indicator-verification">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Differential Pressure Indicator Verification</h5>
+              <p class="text-muted mb-0">Verification of DP indicators used for filter monitoring and process control.</p>
+            </div>
+          </div>
+
+          <!-- TEMPERATURE -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-digital-thermometers">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Digital Thermometers</h5>
+              <p class="text-muted mb-0">Verification across required temperature points with traceable reporting.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-glass-thermometers">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Glass Thermometers</h5>
+              <p class="text-muted mb-0">Calibration and verification for laboratory glass thermometers (scope-dependent).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-thermocouple">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Thermocouple</h5>
+              <p class="text-muted mb-0">Type K, J, T, etc. — probe verification and documentation support.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-thermometers">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Thermometers</h5>
+              <p class="text-muted mb-0">General thermometer calibration (digital/analog) based on your range and accuracy needs.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-rtd-thermometers">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">RTD Thermometers</h5>
+              <p class="text-muted mb-0">Pt100 / Pt1000 RTD-based instruments verification for precise applications.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-dial-thermometers">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Dial Thermometers</h5>
+              <p class="text-muted mb-0">Bimetal dial thermometer verification for process and utilities.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-temperature-bath">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Temperature Bath</h5>
+              <p class="text-muted mb-0">Stability/uniformity verification and temperature reference checks (scope-dependent).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-temperature-calibrators">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Temperature Calibrators</h5>
+              <p class="text-muted mb-0">Dry-block / portable temperature calibrator verification for field and lab use.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-4" id="svc-infrared-thermometer">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Infrared Thermometer</h5>
+              <p class="text-muted mb-0">IR thermometer verification (emissivity considerations as required).</p>
+            </div>
+          </div>
+
+          <!-- TOC -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-online">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Online TOC Analyzers</h5>
+              <p class="text-muted mb-0">Calibration/verification for continuous monitoring TOC systems (utilities, PW/WFI loops, process lines).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-lab">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Laboratory TOC Analyzers</h5>
+              <p class="text-muted mb-0">Bench/lab TOC instruments verification with standards and reporting suitable for QA.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-portable">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Portable / Field TOC</h5>
+              <p class="text-muted mb-0">Calibration/verification for portable TOC units used for spot checks and troubleshooting.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-pw-wfi">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">PW / WFI TOC Systems</h5>
+              <p class="text-muted mb-0">Support for pharmaceutical water compliance monitoring (system-dependent scope).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-sensors">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">TOC Sensors / Probes</h5>
+              <p class="text-muted mb-0">Verification for in-line TOC sensors, including performance checks and documentation.</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-htc">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">High-Temperature Combustion TOC</h5>
+              <p class="text-muted mb-0">Instruments using combustion oxidation (method-specific verification approach).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-toc-uv">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">UV / Persulfate Oxidation TOC</h5>
+              <p class="text-muted mb-0">Instruments using UV/persulfate oxidation (method-specific verification approach).</p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-4" id="svc-toc-modes">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">TC / TIC / TOC / NPOC Modes</h5>
+              <p class="text-muted mb-0">Verification coverage for TC, TIC, TOC and NPOC reporting modes.</p>
+            </div>
+          </div>
+
+          <!-- OTHER EQUIPMENT sections -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-ph"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For pH Measurement Devices</h5><p class="text-muted mb-0">pH meters, probes, and related measurement systems (scope-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-conductivity"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Conductivity Measurement Devices</h5><p class="text-muted mb-0">Conductivity meters, sensors, and transmitters verification.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-humidity-other"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Humidity Measurement Devices</h5><p class="text-muted mb-0">Humidity probes and meters calibration across required RH points.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-densitometer"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Densitometer devices</h5><p class="text-muted mb-0">Verification of density measurement instruments (method-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-airspeed"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Air Speed Measurement Devices</h5><p class="text-muted mb-0">Air velocity meters and probes verification (HVAC / cleanroom).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-length-standards"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Length Standards</h5><p class="text-muted mb-0">Dimensional standards verification and traceable reporting.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-gauge-block"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Gauge Block</h5><p class="text-muted mb-0">Gauge block inspection and calibration (grade/scope-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-diameter-standards"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Diameter Standards</h5><p class="text-muted mb-0">Ring/plug standards and diameter references verification.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-thermo-hygrometer"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Thermo-hygrometer</h5><p class="text-muted mb-0">Combined temperature/RH devices verification.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-flowmeter-other"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Flow meter Measurement Devices</h5><p class="text-muted mb-0">Flow measurement devices verification (gas/liquid; method-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-standard-weights"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Standard Weights</h5><p class="text-muted mb-0">Mass standards calibration with traceable certification.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-time-measurement"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Time Measurement Devices</h5><p class="text-muted mb-0">Timers and time-measuring instruments verification.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-tachometer"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Tachometer</h5><p class="text-muted mb-0">RPM measurement devices verification for rotating equipment.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-hardness"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Hardness Measurement Devices</h5><p class="text-muted mb-0">Hardness testers verification (method/scope-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-volumetric-flasks"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Volumetric Flasks</h5><p class="text-muted mb-0">Volumetric glassware verification (class/scope-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-micropipette"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Micropipette</h5><p class="text-muted mb-0">Micropipette performance verification and documentation.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-digital-caliber"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Digital Caliber</h5><p class="text-muted mb-0">Caliper verification using traceable dimensional standards.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-micrometer"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Micrometer</h5><p class="text-muted mb-0">Micrometer verification across its measuring range.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-temp-rh-loggers"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Temperature and humidity Data Loggers</h5><p class="text-muted mb-0">Loggers verification for storage/transport and monitoring.</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-level-sensor"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Level Sensor</h5><p class="text-muted mb-0">Level sensor calibration/verification (technology-dependent).</p></div></div>
+          <div class="card shadow-sm border-0 rounded-4 mb-5" id="svc-temp-loggers"><div class="card-body p-4"><h5 class="fw-bold mb-2">Calibration For Temperature Data Loggers</h5><p class="text-muted mb-0">Temperature-only loggers verification across required points.</p></div></div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+        </a>
+        <p class="text-body-secondary">&copy; 2026 Karma Lab</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#svc-pressure-gauge" class="nav-link p-0 text-body-secondary">Pressure</a></li>
+          <li class="nav-item mb-2"><a href="#svc-digital-thermometers" class="nav-link p-0 text-body-secondary">Temperature</a></li>
+          <li class="nav-item mb-2"><a href="#svc-toc-online" class="nav-link p-0 text-body-secondary">TOC</a></li>
+          <li class="nav-item mb-2"><a href="#svc-ph" class="nav-link p-0 text-body-secondary">Other Equipments</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Contact</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/ContactSales.html" class="nav-link p-0 text-body-secondary">Book / Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

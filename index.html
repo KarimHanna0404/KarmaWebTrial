@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karma Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Your custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+<div id="app-loader" class="loader-overlay">
+  <img src="assets/img/Karma Logo.png" alt="Company Logo" class="loader-logo">
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+        <li><a class="nav-link" href="/home.html">Home</a></li>
+
+        <!-- Karma Trading -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/index.html" id="tradingDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Trading
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="tradingDropdown">
+            <li><a class="dropdown-item" href="/agents.html">Agents we represent</a></li>
+            <li><a class="dropdown-item" href="/index.html">Home</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/ContactSales.html">Contact Sales</a></li>
+          </ul>
+        </li>
+
+        <!-- Karma Lab -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="labDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Lab
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="labDropdown">
+            <li><a class="dropdown-item" href="/calibration.html">Calibration</a></li>
+            <li><a class="dropdown-item" href="/hvac.html">HVAC</a></li>
+            <li><a class="dropdown-item" href="/validation.html">Validation</a></li>
+            <li><a class="dropdown-item" href="/CleanRoomServices.html">Cleanroom Services</a></li>
+            <li><a class="dropdown-item" href="/accreditation&certification.html">Accreditation & Certifications</a></li>
+            <li><a class="dropdown-item" href="/karmalabHome.html">Home</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/ContactSales.html">Book a Service</a></li>
+          </ul>
+        </li>
+
+        <!-- Karma Steel -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="steelDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Steel
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="steelDropdown">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Product Range</a></li>
+            <li><a class="dropdown-item" href="#">Projects</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Request a Quote</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+      
+
+     
+
+     <!-- Partners Carousel -->
+<section class="container py-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Explore our partner's products</h2>
+  </div>
+
+  <div id="partnersCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="6000"
+     data-bs-pause="hover"
+     data-bs-touch="true">
+<!-- 
+   <div class="carousel-indicators">
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Partner 1"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="1" aria-label="Partner 2"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="2" aria-label="Partner 3"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="3" aria-label="Partner 4"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="4" aria-label="Partner 5"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="5" aria-label="Partner 6"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="6" aria-label="Partner 7"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="7" aria-label="Partner 8"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="8" aria-label="Partner 9"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="9" aria-label="Partner 10"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="10" aria-label="Partner 11"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="11" aria-label="Partner 12"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="12" aria-label="Partner 13"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="13" aria-label="Partner 14"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="14" aria-label="Partner 15"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="15" aria-label="Partner 16"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="16" aria-label="Partner 17"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="17" aria-label="Partner 18"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="18" aria-label="Partner 19"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="19" aria-label="Partner 20"></button>
+  <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="20" aria-label="Partner 21"></button>
+</div> -->
+
+    <div class="carousel-inner">
+
+      <!-- SLIDE: Partner 1 -->
+      <div class="carousel-item active">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <!-- logo + name -->
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="ratio ratio-1x1 partner-logo-box">
+              <img src="/assets/img/Doc-Pharma-Menu-Logo.png" class="img-fluid partner-logo" alt="Partner 1 logo" loading="lazy">
+            </div>
+            <div>
+            </div>
+          </div>
+
+          <!-- products grid -->
+          <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <!-- product card -->
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="assets/img/gzp265.jpg" class="img-fluid" alt="Product A" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Series 265 single sided high speed tablet press</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 12.03.26 PM.png" class="img-fluid" alt="Product B" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">CFM-3500 Capsule filler </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="assets/img/Screenshot 2025-08-30 at 12.04.44 PM.png" class="img-fluid" alt="Product C" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Series 1060 high speed double sided tablet press</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="assets/img/Screenshot 2025-08-30 at 1.41.47 PM.png" class="img-fluid" alt="Product C" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">CFM-7500 high performance stainless steel capsule filler </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SLIDE: Partner 2 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="ratio ratio-1x1 partner-logo-box">
+              <img src="/assets/img/logo_og.jpg.webp" class="img-fluid partner-logo" alt="Partner 2 logo" loading="lazy">
+            </div>
+            <div>
+            </div>
+          </div>
+
+          <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <!-- repeat product tiles -->
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="assets/img/Screenshot 2025-08-30 at 12.31.14 PM.png" class="img-fluid" alt="Product 1" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Zeta Filter Housing</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 12.33.53 PM.png" class="img-fluid" alt="Product 1" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Zeta Freeze Container</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 12.36.23 PM.png" class="img-fluid" alt="Product 1" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Zeta Mousehole</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 1.44.11 PM.png" class="img-fluid" alt="Product 1" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Zeta Dedusting ring</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- ...more products -->
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE: Partner 3 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="ratio ratio-1x1 partner-logo-box">
+              <img src="/assets/img/symex-logo.png" class="img-fluid partner-logo" alt="Partner 3 logo" loading="lazy">
+            </div>
+            <div>
+            </div>
+          </div>
+
+          <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <!-- repeat product tiles -->
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 12.42.47 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Vacuum mixing and homogenizing systems</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 1.46.12 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Powder induction</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 1.47.59 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Pharmaceutical systems</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-30 at 1.49.32 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">In-line homogenizer</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- ...more products -->
+          </div>
+        </div>
+      </div>
+
+
+    
+    <!-- SLIDE: Partner 4 -->
+<div class="carousel-item">
+  <div class="card shadow-sm border-0 rounded-4 p-4">
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <div class="ratio ratio-1x1 partner-logo-box">
+        <!-- FIX: point to your Zellwag/ZPAG logo file & update alt -->
+        <img src="/assets/img/Logo_ZPAG.jpg" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+      <!-- repeat product tiles -->
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card product-card h-100">
+            <div class="ratio ratio-4x3">
+              <img src="/assets/img/Screenshot 2025-08-30 at 2.29.13 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+            </div>
+            <div class="card-body p-2">
+              <div class="small fw-semibold text-dark">Tabletop machine z-lab</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card product-card h-100">
+            <div class="ratio ratio-4x3">
+              <img src="/assets/img/Screenshot 2025-08-30 at 2.26.48 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+            </div>
+            <div class="card-body p-2">
+              <div class="small fw-semibold text-dark">Rotary machine z-110</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card product-card h-100">
+            <div class="ratio ratio-4x3">
+              <img src="/assets/img/Screenshot 2025-08-30 at 12.03.26 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+            </div>
+            <div class="card-body p-2">
+              <div class="small fw-semibold text-dark">Machines for nested products z-810</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card product-card h-100">
+            <div class="ratio ratio-4x3">
+              <img src="/assets/img/Screenshot 2025-08-30 at 1.56.23 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+            </div>
+            <div class="card-body p-2">
+              <div class="small fw-semibold text-dark">Linear Machine Z-201 s</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- SLIDE: Partner 5 -->
+    <div class="carousel-item">
+      <div class="card shadow-sm border-0 rounded-4 p-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="ratio ratio-1x1 partner-logo-box">
+            <img src="/assets/img/Screenshot 2025-08-31 at 4.54.45 PM.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+          </div>
+          <div></div>
+        </div>
+    
+        <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+          <!-- repeat product tiles -->
+          <div class="col">
+            <a href="#" class="text-decoration-none">
+              <div class="card product-card h-100">
+                <div class="ratio ratio-4x3">
+                  <img src="/assets/img/746578f7-9752-4151-a6dc-eb78ac52920c.jpg_1180xaf.jpg" class="img-fluid" alt="Product X" loading="lazy">
+                </div>
+                <div class="card-body p-2">
+                  <div class="small fw-semibold text-dark">LP200/1200 Automatic Bottle unscrambler</div>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col">
+            <a href="#" class="text-decoration-none">
+              <div class="card product-card h-100">
+                <div class="ratio ratio-4x3">
+                  <img src="/assets/img/Screenshot 2025-08-31 at 4.59.02 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                </div>
+                <div class="card-body p-2">
+                  <div class="small fw-semibold text-dark">YGS/24 automatic servo linear liquid filling machine</div>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col">
+            <a href="#" class="text-decoration-none">
+              <div class="card product-card h-100">
+                <div class="ratio ratio-4x3">
+                  <img src="/assets/img/Screenshot 2025-08-31 at 5.01.00 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                </div>
+                <div class="card-body p-2">
+                  <div class="small fw-semibold text-dark">HX620/6500 Far Infrared Tunnel Sterilization Dryer</div>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col">
+            <a href="#" class="text-decoration-none">
+              <div class="card product-card h-100">
+                <div class="ratio ratio-4x3">
+                  <img src="/assets/img/Screenshot 2025-08-31 at 5.02.41 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                </div>
+                <div class="card-body p-2">
+                  <div class="small fw-semibold text-dark">HYS/8 18 head rotary plug press</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- change to top biotech -->
+       <!-- SLIDE: Partner 6 -->
+       <div class="carousel-item">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="ratio ratio-1x1 partner-logo-box">
+              <img src="/assets/img/Line-_Link_0989.webp" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+            </div>
+            <div></div>
+          </div>
+      
+          <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <!-- repeat product tiles -->
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/图片5.jpg" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Solution preparation System</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/图片3.jpg" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Multi effect water distiller</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/图片2.jpg" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Pure Steam Generator
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/１.jpg" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">BFS Ampoule Leak test Machine</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- SLIDE: Partner 7 -->
+       <div class="carousel-item">
+        <div class="card shadow-sm border-0 rounded-4 p-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="ratio ratio-1x1 partner-logo-box">
+              <img src="/assets/img/LogoDevea-e1679323551697.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+            </div>
+            <div></div>
+          </div>
+      
+          <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <!-- repeat product tiles -->
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-31 at 5.18.51 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Phileas 285 Easy range </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-31 at 5.20.18 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Phileas 250 Optimum range </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-31 at 5.22.17 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">Phileas Airlock Inside range</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="card product-card h-100">
+                  <div class="ratio ratio-4x3">
+                    <img src="/assets/img/Screenshot 2025-08-31 at 5.23.50 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                  </div>
+                  <div class="card-body p-2">
+                    <div class="small fw-semibold text-dark">O2SAFE EN 17-272 compliant</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         <!-- SLIDE: Partner 8 -->
+         <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/mP_Logo_rechts_300dpi_RGB.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-08-31 at 5.27.08 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">MINITOC 2 analyzer</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-08-31 at 5.28.14 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">UNITOC Analyzer </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-08-31 at 6.08.15 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">MINITOC</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-08-31 at 6.09.35 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Ionus PCD Ion Chromatograph</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 9 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/media-logo-SV-Latam-blu.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.35.04 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Track and Trace Solution</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.36.36 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Blister Control </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.37.52 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">OCR/OCV control and integral packaging control</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.44.53 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Barcode Control</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- SLIDE: Partner 10 -->
+         <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/LeyroLogo.jpg" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.48.43 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Humidity Relative Humidity Calibrator</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img//Screenshot 2025-09-06 at 5.49.56 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Bimetal Thermometer LTBiGetlChg Temperature probe </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.51.47 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Pneumatic Calibration handpump </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 5.52.54 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Temperature and humidity USB Data Logger</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <!-- SLIDE: Partner 11 -->
+         <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/logo-woku.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.07.18 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Compact Filter</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.10.38 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> HEPA/ULPA filter</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.12.05 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Activated carbon filter </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.13.33 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Rubber Hair filter</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 12 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/logo_spcgroup.jpg" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.23.19 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Standard pumps</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.24.22 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Filling needles for Bosch Machine</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.25.58 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> CIP/SIP pumps </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-06 at 6.27.08 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Micro filling piston pumps for Bausch+ Strobel Machines</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 13 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/Screenshot 2025-09-08 at 12.26.44 PM.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.27.34 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Cleanroom and ESD fabrics</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.28.32 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Industrial Glove </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.29.15 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Flame retardant fabrics </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.29.51 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Duct Fabrics</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 14 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/AdvantaPURE-logo-2C_trans.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.33.03 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">APSPG Silicone Pump Grade Tubing</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.34.22 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> AdvantaFlex Biopharmaceutical grade TPE tubing </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.35.27 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Oetiker Clamps </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.36.23 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> APFOS: Stainless Steel Overbraided PTFE Hose</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- SLIDE: Partner 15 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/b-px-logo1e.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.41.04 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">S Centrifugal Pump</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.42.09 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> KHE U Tubular Heat Exchanger </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.43.18 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Storage Tank </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-08 at 12.46.13 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Strainer Filter </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 16 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/labstac-usa-1665985543.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.49.26 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Air Protection</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.51.36 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Analyzer </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.52.30 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Fume Hood </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.53.08 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Autoclave </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      <!-- change to lab equipment only -->
+        <!-- SLIDE: Partner 17 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/unnamed.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.49.26 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">16-channel and 32 channel automatic tablet counter</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.55.51 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> UBM-190C High speed blister packing machine </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.56.53 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> High Speed Capsule filler </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 2.57.54 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Softgel Encapsulation Mfg. Line </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- check pictures corrlating to the equipment -->
+        <!-- SLIDE: Partner 18 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/Screenshot 2025-09-10 at 3.01.07 PM.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.02.02 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">S&M Compact condensation Aerosol Generator</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.03.13 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> PH-4 Digital Aerosol photometer </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.05.41 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> S&M Positive injection Pump </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.06.13 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Laskin Aerosol Generator AG-E1 </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- SLIDE: Partner 19 -->
+         <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/new-Lead-Fluid.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.02.02 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">BT600S Basic Variable Speed Peristaltic Pump</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.30.48 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> YZ35 High Flow Rate Pump Head </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.32.11 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> CT3000F inteliigent Dispensing Micro Gear Pump </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.33.44 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> FG601S-W3 Explosion Proof Motor Peristaltic Pump</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE: Partner 20 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/Screenshot 2025-09-10 at 3.37.06 PM.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.42.14 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Ethernet Multilogger - thermo hygro meter with 4MiniDIN inputs</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.44.31 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> IoT wireless Thermometer with three channels, LoRaWAN network </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.47.06 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> WIFI temperature sensor with integrated probe </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.51.30 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Multilogger - Low Cost Thermometer with 4 thermocouple inputs</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SLIDE: Partner 21 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-4 p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="ratio ratio-1x1 partner-logo-box">
+                <img src="/assets/img/Kanomax-Logo-Website.png" class="img-fluid partner-logo" alt="Partner 4 logo" loading="lazy">
+              </div>
+              <div></div>
+            </div>
+        
+            <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-md-4">
+              <!-- repeat product tiles -->
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 3.56.31 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark">Climomaster Anemometer- 6501 series</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 4.00.17 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Cleanroom monitoring system- model crms </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 4.03.04 PM.png"  class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Tri color fume hood visualizer </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col">
+                <a href="#" class="text-decoration-none">
+                  <div class="card product-card h-100">
+                    <div class="ratio ratio-4x3">
+                      <img src="/assets/img/Screenshot 2025-09-10 at 4.04.32 PM.png" class="img-fluid" alt="Product X" loading="lazy">
+                    </div>
+                    <div class="card-body p-2">
+                      <div class="small fw-semibold text-dark"> Sound Meter 4431</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+  
+
+    </div>
+
+    <!-- controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <h1 class="fw-bold">A Partner you can rely on!</h1>
+      <p class="lead text-muted mt-3">
+        The company has provided the Egyptian Industry with strong technical support, quality products from world class manufacturers with a true commitment to the quality and service improvement process. Our integrity, professionalism, innovation and expertise earned us the respect and credibility to work with any size of companies in Egypt and Middle East. This winning strategy has not only provided us with strong customer loyalty.
+
+      </p>
+    </div>
+  </div>
+</section>
+
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+            </a>
+            <p class="text-body-secondary">&copy; 2026 Karma Group</p>
+          </div>
+      
+          <div class="col mb-3"></div>
+      
+          <div class="col mb-3">
+            <h5>Socials</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Contact us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            </ul>
+          </div>
+      
+        </footer>
+      </div>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom JS -->
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    window.addEventListener('load', () => {
+      const el = document.getElementById('partnersCarousel');
+      if (!el) return;
+  
+      // If something (like main.js) already initialized it, kill it
+      const existing = bootstrap.Carousel.getInstance(el);
+      if (existing) existing.dispose();
+  
+      // Recreate with autoplay ON
+      new bootstrap.Carousel(el, {
+        interval: 6000,
+        ride: 'carousel',
+        pause: 'hover',
+        touch: true,
+        wrap: true
+      });
+    });
+  </script>
+
+  <script>
+    const loader = document.getElementById('app-loader');
+    function showLoader(){ loader.classList.add('show'); }
+    function hideLoader(){ loader.classList.remove('show'); }
+  
+    // A) Show until the page is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      showLoader();
+    });
+    window.addEventListener('load', () => {
+      hideLoader();
+    });
+  
+    // B) Wrap fetch calls (optional)
+    async function withLoader(promiseFactory){
+      try {
+        showLoader();
+        return await promiseFactory();
+      } finally {
+        hideLoader();
+      }
+    }
+  
+    // Example usage:
+    // withLoader(() => fetch('/api/products').then(r => r.json()));
+  </script>
+</body>
+</html>

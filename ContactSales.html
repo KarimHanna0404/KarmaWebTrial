@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karma Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Your custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+  <div id="app-loader" class="loader-overlay">
+    <img src="assets/img/Karma Logo.png" alt="Company Logo" class="loader-logo">
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+          <li><a class="nav-link" href="/home.html">Home</a></li>
+
+          <!-- Karma Trading -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/index.html" id="tradingDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Trading
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="tradingDropdown">
+              <li><a class="dropdown-item" href="/agents.html">Agents we represent</a></li>
+              <li><a class="dropdown-item" href="/index.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Contact Sales</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Lab -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="labDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Lab
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="labDropdown">
+              <li><a class="dropdown-item" href="/calibration.html">Calibration</a></li>
+              <li><a class="dropdown-item" href="/hvac.html">HVAC</a></li>
+              <li><a class="dropdown-item" href="/validation.html">Validation</a></li>
+              <li><a class="dropdown-item" href="/CleanRoomServices.html">Cleanroom Services</a></li>
+              <li><a class="dropdown-item" href="/accreditation&certification.html">Accreditation & Certifications</a></li>
+              <li><a class="dropdown-item" href="/karmalabHome.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Book a Service</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Steel -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="steelDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Steel
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="steelDropdown">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Product Range</a></li>
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Request a Quote</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-mini py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold">Contact Sales</h1>
+      <p class="text-muted mb-0">Tell us what you’re looking for—equipment, services, or a complete solution. We’ll respond as fast as we can.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Form -->
+        <div class="col-lg-7">
+          <div class="card form-card p-4">
+            <form id="contactSalesForm" novalidate>
+              <!-- Honeypot (anti-bot) -->
+              <input type="text" name="company_website" class="visually-hidden-robot" autocomplete="off"/>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label required" for="fullName">Full name</label>
+                  <input id="fullName" name="fullName" type="text" class="form-control" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label required" for="company">Company</label>
+                  <input id="company" name="company" type="text" class="form-control" required>
+                  <div class="invalid-feedback">Please enter your company name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label required" for="email">Work email</label>
+                  <input id="email" name="email" type="email" class="form-control" required>
+                  <div class="invalid-feedback">Enter a valid email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" class="form-control" placeholder="+1 (555) 555-5555">
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label required" for="industry">Industry</label>
+                  <select id="industry" name="industry" class="form-select" required>
+                    <option value="" selected disabled>Choose...</option>
+                    <option>Pharmaceutical</option>
+                    <option>Biotech</option>
+                    <option>Food & Beverage</option>
+                    <option>Petrochemical</option>
+                    <option>Academic/Research</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an industry.</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label required">Interested in</label>
+                  <div class="row">
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Equipment" id="interestEquipment">
+                        <label class="form-check-label" for="interestEquipment">Equipment</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Calibration" id="interestCalibration">
+                        <label class="form-check-label" for="interestCalibration">Calibration</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Validation" id="interestValidation">
+                        <label class="form-check-label" for="interestValidation">Validation</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Cleanroom Services" id="interestCleanroom">
+                        <label class="form-check-label" for="interestCleanroom">Cleanroom Services</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Consulting" id="interestConsulting">
+                        <label class="form-check-label" for="interestConsulting">Consulting</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Other" id="interestOther">
+                        <label class="form-check-label" for="interestOther">Other (Please Specify)</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label required" for="message">Project details</label>
+                  <textarea id="message" name="message" class="form-control" rows="5"
+                            placeholder="Tell us about your application, required throughput, compliance needs, and timeline."
+                            required></textarea>
+                  <div class="invalid-feedback">Please share a brief description.</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="consent" required>
+                    <label class="form-check-label required" for="consent">
+                      I agree to be contacted about my inquiry.
+                    </label>
+                    <div class="invalid-feedback">Please confirm consent to continue.</div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-grid">
+                  <button class="btn btn-success btn-lg" type="submit">Send request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar: contact info -->
+        <div class="col-lg-5">
+          <div class="p-4 border rounded-4 h-100">
+            <h5 class="fw-bold mb-3">Talk to our sales specialist</h5>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><strong>Email:</strong> <a href="mailto:sales@karmaegypt.com">sales@karmaegypt.com</a></li>
+              <li class="mb-2"><strong>Phone:</strong> +20 xxx xxx xxxx</li>
+              <li class="mb-2"><strong>Hours:</strong> Sun–Thu, 9:00–17:00 (EET)</li>
+            </ul>
+
+            <!-- Map placeholder -->
+            <div class="ratio ratio-16x9 mt-4">
+              <iframe
+                src="https://www.google.com/maps?q=Cairo&output=embed"
+                title="Karma Office Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+        </a>
+        <p class="text-body-secondary">&copy; 2026 Karma Group</p>
+      </div>
+  
+      <div class="col mb-3"></div>
+  
+      <div class="col mb-3">
+        <h5>Socials</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        </ul>
+      </div>
+  
+    </footer>
+  </div>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({ publicKey: "service_pwgm7ca" }); 
+  </script>
+
+  <!-- Custom Script -->
+  <script>
+    const loader = document.getElementById('app-loader');
+    const showLoader = () => loader?.classList.add('show');
+    const hideLoader = () => loader?.classList.remove('show');
+
+    (function () {
+      const form = document.getElementById('contactSalesForm');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        form.classList.add('was-validated');
+
+        const trap = form.querySelector('input[name="company_website"]');
+        if (trap && trap.value.trim() !== '') return;
+
+        if (!form.checkValidity()) return;
+
+        const interests = Array.from(form.querySelectorAll('.form-check-input[type="checkbox"]:checked'))
+          .map(cb => cb.value);
+
+        const payload = {
+          full_name: form.fullName.value.trim(),
+          company: form.company.value.trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          industry: form.industry.value,
+          interests: interests.length ? interests.join(", ") : "N/A",
+          message: form.message.value.trim(),
+          consent: !!form.consent.checked,
+          page: location.href,
+          ts: new Date().toISOString(),
+          reply_to: form.email.value.trim()
+        };
+
+        try {
+          showLoader();
+          await emailjs.send("service_pwgm7ca", "template_lqe880h", payload);
+          form.reset();
+          form.classList.remove('was-validated');
+          alert("✅ Thanks! Your request has been sent.");
+        } catch (err) {
+          console.error("EmailJS error:", err);
+          alert("❌ Oops—something went wrong. Please try again.");
+        } finally {
+          hideLoader();
+        }
+      });
+    })();
+  </script>
+  
+  
+</body>
+</html>

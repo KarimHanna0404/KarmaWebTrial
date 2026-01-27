@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karma Lab | Validation Services</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+          <li><a class="nav-link" href="/home.html">Home</a></li>
+
+          <!-- Karma Trading -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/index.html" id="tradingDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Trading
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="tradingDropdown">
+              <li><a class="dropdown-item" href="/agents.html">Agents we represent</a></li>
+              <li><a class="dropdown-item" href="/index.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Contact Sales</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Lab -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="labDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Lab
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="labDropdown">
+              <li><a class="dropdown-item" href="/calibration.html">Calibration</a></li>
+              <li><a class="dropdown-item" href="/hvac.html">HVAC</a></li>
+              <li><a class="dropdown-item" href="/validation.html">Validation</a></li>
+              <li><a class="dropdown-item" href="/CleanRoomServices.html">Cleanroom Services</a></li>
+              <li><a class="dropdown-item" href="/accreditation&certification.html">Accreditation & Certifications</a></li>
+              <li><a class="dropdown-item" href="/karmalabHome.html">Home</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/ContactSales.html">Book a Service</a></li>
+            </ul>
+          </li>
+
+          <!-- Karma Steel -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="steelDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Karma Steel
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="steelDropdown">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Product Range</a></li>
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Request a Quote</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="py-4 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="fw-bold">Validation Services</h1>
+        <p class="text-muted mb-0">
+          Karma Lab delivers reliable validation and qualification services to support compliance, performance,
+          and audit readiness. Our team plans, executes, and documents testing using controlled methods,
+          clear reporting, and industry-aligned practices. Click a category on the left to explore our validation services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO-COLUMN LAYOUT -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- SIDEBAR -->
+        <aside class="col-12 col-lg-4">
+          <div class="card shadow-sm border-0 rounded-4 sidebar-card">
+            <div class="card-body p-3 p-md-4">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div>
+                  <div class="text-muted sidebar-title">SERVICE MENU</div>
+                  <h5 class="mb-0 fw-bold">Categories</h5>
+                </div>
+                <span class="badge text-bg-light border">On-site / In-lab</span>
+              </div>
+
+              <div class="accordion" id="validationAccordion">
+
+                <!-- Validation & Qualification -->
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingVQ">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseVQ" aria-expanded="true" aria-controls="collapseVQ">
+                      Validation & Qualification
+                    </button>
+                  </h2>
+
+                  <div id="collapseVQ" class="accordion-collapse collapse show"
+                       aria-labelledby="headingVQ" data-bs-parent="#validationAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-hvac-cleanroom-validation">HVAC &amp; Cleanroom Validation</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-validation-test-perform">Validation Test Perform</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-media-prep-filming">Media Preparation &amp; Filing Videography</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-airflow-visualization">Air Flow Visualization Study</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-compressed-air-validation">Compressed Air Validation</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-thermal-validation">Thermal Validation</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-plc-csv-validation">PLC / CSV Validation</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-facility-equipment-qualification">Facility/Equipment Qualification &amp; Validation</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Documentation & Compliance Support -->
+                <div class="accordion-item border-0 mt-2">
+                  <h2 class="accordion-header" id="headingDocs">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseDocs" aria-expanded="false" aria-controls="collapseDocs">
+                      Documentation & Compliance Support
+                    </button>
+                  </h2>
+                  <div id="collapseDocs" class="accordion-collapse collapse"
+                       aria-labelledby="headingDocs" data-bs-parent="#validationAccordion">
+                    <div class="accordion-body pt-2">
+                      <div class="d-flex flex-wrap gap-2">
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-protocols-reports">Protocols &amp; Reports</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-traceability">Traceability &amp; Evidence Packages</a>
+                        <a class="service-pill text-decoration-none text-dark" href="#svc-audit-support">Audit / Inspection Support</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mt-4">
+                <a href="/calibration-contact.html" class="btn btn-success w-100">Book / Contact</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- CONTENT AREA -->
+        <main class="col-12 col-lg-8">
+
+          <!-- VALIDATION & QUALIFICATION SERVICES -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-hvac-cleanroom-validation">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">HVAC &amp; Cleanroom Validation</h5>
+              <p class="text-muted mb-0">
+                End-to-end validation for controlled environments, including airflow, pressure relationships, filtration checks,
+                and operational performance to support cleanroom classification and compliance.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-validation-test-perform">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Validation Test Perform</h5>
+              <p class="text-muted mb-0">
+                Execution of validation test protocols with clear acceptance criteria, structured results capture,
+                and traceable reporting suitable for QA review.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-media-prep-filming">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Media Preparation &amp; Filing Videography</h5>
+              <p class="text-muted mb-0">
+                Documentation support including preparation of validation media, controlled file organization,
+                and videography capture for evidence and audit-ready records (scope-dependent).
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-airflow-visualization">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Air Flow Visualization Study</h5>
+              <p class="text-muted mb-0">
+                Smoke studies and airflow visualization to verify airflow patterns, identify turbulence and dead zones,
+                and confirm containment and directional flow where required.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-compressed-air-validation">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Compressed Air Validation</h5>
+              <p class="text-muted mb-0">
+                Validation of compressed air systems for performance and suitability in production environments,
+                including sampling plans and reporting aligned to your risk and compliance needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-thermal-validation">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Thermal Validation</h5>
+              <p class="text-muted mb-0">
+                Thermal mapping and validation studies to confirm temperature distribution, stability, and performance
+                for rooms, equipment, or storage environments (application-dependent).
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-plc-csv-validation">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">PLC / CSV Validation</h5>
+              <p class="text-muted mb-0">
+                Validation support for PLC-controlled systems and computerized system validation (CSV),
+                including documentation, test execution, and evidence compilation.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-4" id="svc-facility-equipment-qualification">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Facility/Equipment Qualification &amp; Validation</h5>
+              <p class="text-muted mb-0">
+                Qualification and validation services for facilities and equipment, including protocol development,
+                IQ/OQ/PQ execution support, and structured reporting.
+              </p>
+            </div>
+          </div>
+
+          <!-- DOCS & COMPLIANCE SUPPORT -->
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-protocols-reports">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Protocols &amp; Reports</h5>
+              <p class="text-muted mb-0">
+                Clear, structured documentation packages: protocols, test scripts, deviations, and summary reports aligned to your internal QA standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-3" id="svc-traceability">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Traceability &amp; Evidence Packages</h5>
+              <p class="text-muted mb-0">
+                Traceable evidence collection, file structure, and data integrity support to simplify reviews and reduce audit friction.
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm border-0 rounded-4 mb-5" id="svc-audit-support">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Audit / Inspection Support</h5>
+              <p class="text-muted mb-0">
+                Assistance preparing for audits and inspections: document readiness checks, evidence retrieval, and support during QA review cycles.
+              </p>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same structure as your calibration page) -->
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+        </a>
+        <p class="text-body-secondary">&copy; 2026 Karma Lab</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/calibration.html" class="nav-link p-0 text-body-secondary">Calibration</a></li>
+          <li class="nav-item mb-2"><a href="/hvac.html" class="nav-link p-0 text-body-secondary">HVAC</a></li>
+          <li class="nav-item mb-2"><a href="/validation.html" class="nav-link p-0 text-body-secondary">Validation</a></li>
+          <li class="nav-item mb-2"><a href="/CleanRoomServices.html" class="nav-link p-0 text-body-secondary">Cleanroom Services</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Contact</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/ContactSales.html" class="nav-link p-0 text-body-secondary">Book / Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

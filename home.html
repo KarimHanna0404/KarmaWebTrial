@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karma Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Your custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- Page-only aesthetic upgrades (keeps your layout) -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Overlay -->
+  <div id="app-loader" class="loader-overlay">
+    <img src="assets/img/Karma Logo.png" alt="Company Logo" class="loader-logo">
+  </div>
+
+ <!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+        <li><a class="nav-link" href="/home.html">Home</a></li>
+
+        <!-- Karma Trading -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/index.html" id="tradingDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Trading
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="tradingDropdown">
+            <li><a class="dropdown-item" href="/agents.html">Agents we represent</a></li>
+            <li><a class="dropdown-item" href="/index.html">Home</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/ContactSales.html">Contact Sales</a></li>
+          </ul>
+        </li>
+
+        <!-- Karma Lab -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="labDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Lab
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="labDropdown">
+            <li><a class="dropdown-item" href="/calibration.html">Calibration</a></li>
+            <li><a class="dropdown-item" href="/hvac.html">HVAC</a></li>
+            <li><a class="dropdown-item" href="/validation.html">Validation</a></li>
+            <li><a class="dropdown-item" href="/CleanRoomServices.html">Cleanroom Services</a></li>
+            <li><a class="dropdown-item" href="/accreditation&certification.html">Accreditation & Certifications</a></li>
+            <li><a class="dropdown-item" href="/karmalabHome.html">Home</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/ContactSales.html">Book a Service</a></li>
+          </ul>
+        </li>
+
+        <!-- Karma Steel -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="steelDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Karma Steel
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="steelDropdown">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Product Range</a></li>
+            <li><a class="dropdown-item" href="#">Projects</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Request a Quote</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- Home Menu: Visual Gateway -->
+  <section class="text-center container home-hero section-pad">
+    <div class="row">
+      <div class="col-lg-9 col-md-11 mx-auto">
+        <h2 class="hero-title">Karma Group</h2>
+        <p class="hero-sub">
+          Explore our specialized companies—each focused on quality, compliance, and delivering measurable results.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+      <!-- Karma Trading -->
+      <div class="col">
+        <div class="card h-100 brand-card">
+          <div class="card-media">
+            <span class="card-badge">Trading & Engineering</span>
+            <img src="assets/img/Karma Trading - Website 3.png" class="card-img-top" alt="Karma Trading">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Karma Trading &amp; Engineering</h5>
+            <p class="card-text">
+              Global agent for world-class pharmaceutical machinery, lab equipment, and consumables.
+            </p>
+            <a href="/index.html" class="btn btn-success">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karma Lab -->
+      <div class="col">
+        <div class="card h-100 brand-card">
+          <div class="card-media">
+            <span class="card-badge">Calibration • Validation • Cleanroom • HVAC</span>
+            <img src="assets/img/Karma Lab - Website.png" class="card-img-top" alt="Karma Lab">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Karma Lab</h5>
+            <p class="card-text">
+              Calibration, validation, and cleanroom services to support reliability and compliance.
+            </p>
+            <!-- change href to your lab landing page -->
+            <a href="/karmalabHome.html" class="btn btn-success">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karma Steel -->
+      <div class="col">
+        <div class="card h-100 brand-card">
+          <div class="card-media">
+            <span class="card-badge">Stainless Steel manufacturing</span>
+            <img src="assets/img/Karma Steel - Website.png" class="card-img-top" alt="Karma Steel">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Karma Steel</h5>
+            <p class="card-text">
+              Stainless steel fabrication and turnkey projects built with precision and durability.
+            </p>
+            <a href="#" class="btn btn-success">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="/assets/img/Karma Logo.png" alt="Karma Logo" width="200" height="190" class="me-2">
+        </a>
+        <p class="text-body-secondary">&copy; 2026 Karma Group</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Socials</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom JS -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const loader = document.getElementById('app-loader');
+    function showLoader(){ loader.classList.add('show'); }
+    function hideLoader(){ loader.classList.remove('show'); }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      showLoader();
+    });
+    window.addEventListener('load', () => {
+      hideLoader();
+    });
+
+    async function withLoader(promiseFactory){
+      try {
+        showLoader();
+        return await promiseFactory();
+      } finally {
+        hideLoader();
+      }
+    }
+  </script>
+</body>
+</html>

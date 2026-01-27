@@ -1,0 +1,599 @@
+/* Custom card styling */
+.custom-card {
+    border-radius: 20px;         /* Rounded corners */
+    overflow: hidden;            /* Ensures image corners follow rounding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add shadow and lift on hover */
+  .custom-card:hover {
+    transform: translateY(-8px); /* Lift the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Make spacing between cards larger */
+  .row.g-4 {
+    --bs-gutter-x: 2.5rem;  /* Horizontal spacing */
+    --bs-gutter-y: 2.5rem;  /* Vertical spacing */
+  }
+  
+  /* Round the card images */
+  .custom-card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+/* Green outline button */
+.btn-primary {
+    background-color: transparent;   /* No fill */
+    color: #28a745;                  /* Green text */
+    border: 2px solid #28a745;       /* Green border */
+    transition: all 0.3s ease;
+  }
+  
+  /* On hover: fill green with white text */
+  .btn-primary:hover {
+    background-color: #28a745;       /* Fill green */
+    color: #fff;                     /* Text turns white */
+    border-color: #28a745;           /* Keep border green */
+  }
+
+  /* Force consistent image height in cards */
+.custom-card .card-img-top {
+    height: 200px;         /* pick a height that works for you */
+    object-fit: contain;   /* or 'cover' depending on desired look */
+    background-color: #f8f9fa; /* optional: light gray background for logos */
+    padding: 10px;         /* optional: spacing around logos */
+  }
+
+  /* Navbar styling */
+.navbar {
+    background-color: white !important; /* clean white header */
+    border-bottom: 3px solid #006400;   /* dark green underline */
+  }
+
+  footer.border-top {
+    border-top: 3px solid #006400 !important; /* dark green */
+  }
+
+  /* Fullscreen overlay */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.35);     
+  backdrop-filter: blur(2px);       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;                       
+  visibility: hidden;
+  transition: opacity .25s ease, visibility 0s linear .25s;
+  z-index: 2000;                    
+}
+
+.loader-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .25s ease;
+}
+
+/* Spinner (pure CSS) */
+.loader-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: .35rem solid #fff;
+  border-top-color: var(--bs-primary); /* uses Bootstrap color */
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Make navbar brand + links bigger */
+.navbar-brand {
+  font-size: 1.5rem;   /* Bigger logo text */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;   /* Bigger nav links */
+  font-weight: 500;    /* Slightly bolder */
+}
+
+/* Footer section */
+footer h5 {
+  font-size: 1.5rem;   /* Footer headings bigger */
+  font-weight: 600;
+  color: #111 !important; /* dark text */
+
+}
+
+footer .nav-link,
+footer p {
+  font-size: 1.5rem;
+  color: #111 !important; /* dark text */
+  /* Footer text/links bigger */
+}
+
+@font-face {
+  font-family: 'Peignot';
+  src: url('/assets/fonts/peignot-bq/peignot.ttf') format('woff2'),
+       url('/assets/fonts/peignot-bq/peignot.ttf') format('woff'),
+       url('/assets/fonts/peignot-bq/peignot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar, footer {
+  font-family: 'Peignot', sans-serif;
+}
+
+
+/* Make navbar text bigger and use Peignot */
+.navbar-nav .nav-link {
+  font-family: 'Peignot', sans-serif; /* fallback if Peignot not available */
+  font-size: 1.4rem;  /* adjust size (default ~1rem) */
+  font-weight: bold;  /* makes them stand out */
+  letter-spacing: 1px; /* optional: spacing for elegance */
+  color: #111 !important; /* dark text */
+}
+
+/* Dropdown items also bigger */
+.dropdown-menu .dropdown-item {
+  font-family: 'Peignot', sans-serif;
+  font-size: 1.2rem;
+}
+
+.home-logo {
+  /* border-radius: 50%;  */
+  transition: transform 0.3s ease;
+}
+
+.home-logo:hover {
+  transform: scale(1.1); /* subtle zoom on hover */
+}
+
+/* Make logos visually consistent */
+.partner-logo {
+  max-height: 56px;          /* keep them small */
+  object-fit: contain;
+  opacity: 1;
+  transition: filter .2s ease, opacity .2s ease, transform .2s ease;
+}
+
+/* Hover effect */
+.logo-tile:hover .partner-logo {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Optional: use your green for borders */
+.logo-tile .border {
+  border-color: #75d733 !important; /* your green */
+  border-width: 1.5px;
+}
+
+.partner-logo-box {
+  max-width: 120px;   
+}
+
+.partner-logo {
+  object-fit: contain;
+  max-height: 100px;  /* taller logos */
+  transition: transform .2s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);  /* gentle zoom on hover */
+}
+
+.product-card {
+  border: 1px solid rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.08);
+}
+.product-card .ratio img {
+  object-fit: contain;
+  padding: .5rem;
+}
+
+.hero-mini {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid #e9ecef;
+}
+
+ /* --- Cleanroom hover behavior --- */
+ .cleanroom-wrap { position: relative; }
+
+ /* Default (nothing hovered): show all descriptions */
+ .cleanroom-card .cleanroom-desc { opacity: 1; max-height: 200px; }
+
+ /* When hovering the whole grid: hide all descriptions */
+ .cleanroom-grid:hover .cleanroom-card .cleanroom-desc {
+   opacity: 0;
+   max-height: 0;
+   margin-top: 0 !important;
+ }
+
+ /* When hovering a specific card: show only that card’s description */
+ .cleanroom-grid:hover .cleanroom-card:hover .cleanroom-desc {
+   opacity: 1;
+   max-height: 220px;
+   margin-top: .5rem !important;
+ }
+
+ .cleanroom-desc {
+   transition: opacity .18s ease, max-height .22s ease;
+   overflow: hidden;
+ }
+
+ .cleanroom-card {
+   cursor: default;
+   transition: transform .15s ease, box-shadow .15s ease;
+ }
+ .cleanroom-card:hover {
+   transform: translateY(-3px);
+ }
+
+ .service-badge {
+   display: inline-flex;
+   gap: .4rem;
+   align-items: center;
+   padding: .35rem .6rem;
+   border-radius: 999px;
+   border: 1px solid rgba(0,0,0,.08);
+   background: rgba(255,255,255,.75);
+   font-size: .85rem;
+ }
+
+ /* Optional: nicer spacing on small screens */
+ @media (max-width: 575.98px) {
+   .cleanroom-desc { max-height: none !important; opacity: 1 !important; }
+   .cleanroom-grid:hover .cleanroom-card .cleanroom-desc { opacity: 1; max-height: none; }
+ }
+
+
+
+.required::after { content:" *"; color:#dc3545; }
+.form-card { border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+.list-check li { margin-bottom:.35rem; }
+.visually-hidden-robot { position:absolute; left:-5000px; }
+.sidebar-card { position: sticky; top: 1rem; }
+.sidebar-title { font-size: .95rem; letter-spacing: .02em; }
+.service-pill{
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 999px;
+  padding: .35rem .65rem;
+  display: inline-flex;
+  gap: .35rem;
+  align-items: center;
+}
+.service-pill:hover { background: rgba(0,0,0,.03); }
+
+:root{
+  --karma-green:#198754; /* matches btn-success vibe */
+  --karma-soft:#f7f9fb;
+  --karma-border: rgba(0,0,0,.08);
+  --karma-shadow: 0 10px 30px rgba(0,0,0,.08);
+  --karma-shadow-hover: 0 16px 45px rgba(0,0,0,.14);
+}
+
+body{
+  background:
+    radial-gradient(900px 500px at 10% 0%, rgba(25,135,84,.10), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(13,110,253,.06), transparent 55%),
+    linear-gradient(#ffffff, #ffffff);
+}
+
+/* Navbar subtle polish (doesn't change structure) */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.navbar .nav-link{
+  font-weight: 600;
+  opacity: .92;
+}
+.navbar .nav-link:hover{
+  opacity: 1;
+}
+
+/* Loader polish */
+.loader-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+  z-index: 2000;
+}
+.loader-overlay.show{
+  opacity: 1;
+  pointer-events: all;
+}
+.loader-logo{
+  width: 180px;
+  height: auto;
+  animation: pulse 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 14px 24px rgba(0,0,0,.12));
+}
+@keyframes pulse{
+  0%,100%{ transform: scale(1); opacity: .95; }
+  50%{ transform: scale(1.03); opacity: 1; }
+}
+
+/* Hero / gateway section */
+.home-hero{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.hero-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .75rem;
+  border: 1px solid rgba(25,135,84,.25);
+  background: rgba(25,135,84,.08);
+  color: #0f5132;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  font-size: .9rem;
+}
+.hero-title{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: .85rem;
+  margin-bottom: .35rem;
+}
+.hero-sub{
+  max-width: 740px;
+  margin: 0 auto;
+  color: rgba(0,0,0,.65);
+}
+
+/* Cards: keep grid/layout, improve aesthetics */
+.brand-card{
+  border: 1px solid var(--karma-border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: var(--karma-shadow);
+  transition: transform .22s ease, box-shadow .22s ease;
+  background: #fff;
+}
+.brand-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--karma-shadow-hover);
+}
+
+.brand-card .card-img-top{
+  height: 220px;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+/* Image overlay for a premium feel */
+.card-media{
+  position: relative;
+}
+.card-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 45%, rgba(0,0,0,.30) 100%);
+  pointer-events:none;
+}
+
+.card-badge{
+  position:absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .82rem;
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(0,0,0,.06);
+  backdrop-filter: blur(8px);
+}
+
+.card-body{
+  padding: 1.25rem 1.25rem 1.35rem;
+}
+.card-title{
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: .35rem;
+}
+.card-text{
+  color: rgba(0,0,0,.68);
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-success{
+  border-radius: 999px;
+  padding: .55rem 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(25,135,84,.18);
+}
+.btn-success:hover{
+  box-shadow: 0 14px 26px rgba(25,135,84,.26);
+}
+
+/* Footer polish */
+footer{
+  border-top: 1px solid rgba(0,0,0,.08) !important;
+}
+footer h5{
+  font-weight: 800;
+}
+footer .nav-link{
+  color: rgba(0,0,0,.55) !important;
+}
+footer .nav-link:hover{
+  color: rgba(0,0,0,.85) !important;
+}
+
+/* Subtle section divider spacing */
+.section-pad{
+  padding-bottom: 2.25rem;
+}
+
+/* Page polish (safe, doesn't break your existing navbar styles) */
+.page-hero {
+  padding: 2.5rem 0 1.25rem;
+  background: linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,0));
+}
+
+.cert-card{
+  border: 0;
+  border-radius: 1.25rem;
+  box-shadow: 0 .75rem 1.25rem rgba(0,0,0,.08);
+  overflow: hidden;
+  background: #fff;
+}
+
+.cert-slide{
+  padding: 1.25rem;
+}
+
+/* Placeholder box (until you replace with real images) */
+.cert-placeholder{
+  border: 2px dashed rgba(0,0,0,.18);
+  border-radius: 1rem;
+  background: rgba(0,0,0,.02);
+  height: 340px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.cert-placeholder .title{
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.cert-placeholder .hint{
+  color: rgba(0,0,0,.55);
+  font-size: .9rem;
+}
+
+/* When you replace placeholder with a real image */
+.cert-image{
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 14px;
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+/* Nicer indicators */
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: var(--karma-green);
+  padding-top: 10px;
+  margin-bottom: 90px;
+}
+
+/* Subtle spacing for descriptions */
+.cert-desc h5 { margin-bottom: .25rem; }
+.cert-desc p { margin-bottom: 0; }
+
+    .page-hero {
+      padding: 2.5rem 0 1.25rem;
+      background: linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,0));
+    }
+
+    .cert-card{
+      border: 0;
+      border-radius: 1.25rem;
+      box-shadow: 0 .75rem 1.25rem rgba(0,0,0,.08);
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .cert-slide{
+      padding: 1.25rem;
+    }
+
+    /* Image fits inside frame */
+    .cert-frame{
+  height: 380px;              /* consistent visual height */
+  width: 100%;
+  border-radius: 1rem;
+  /* background: #ffffff; */
+  /* border: 1px solid rgba(0,0,0,.08); */
+  display: flex;
+  align-items: center;        /* vertical centering */
+  justify-content: center;    /* horizontal centering */
+  overflow: hidden;
+  padding: 16px;
+}
+
+/* Works for BOTH portrait & landscape certificates */
+.cert-image{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 430px; /* was 380px */
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-item:first-child .cert-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+    /* Placeholder version (no dotted border) */
+    .cert-frame--placeholder{
+      background: rgba(0,0,0,.03);
+    }
+
+    .cert-placeholder-content{
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .cert-placeholder-content .title{
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .cert-placeholder-content .hint{
+      color: rgba(0,0,0,.55);
+      font-size: .9rem;
+    }
+
+    /* Indicators: slightly nicer */
+    .carousel-indicators [data-bs-target]{
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+    }
+
+    /* Subtle spacing for descriptions */
+    .cert-desc h5 { margin-bottom: .25rem; }
+    .cert-desc p { margin-bottom: 0; }

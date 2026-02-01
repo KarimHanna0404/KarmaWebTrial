@@ -116,11 +116,9 @@ footer p {
   /* Footer text/links bigger */
 }
 
-@font-face {
+@font-face{
   font-family: 'Peignot';
-  src: url('assets/fonts/peignot-bq/peignot.ttf') format('woff2'),
-       url('assets/fonts/peignot-bq/peignot.ttf') format('woff'),
-       url('assets/fonts/peignot-bq/peignot.ttf') format('truetype');
+  src: url('../fonts/peignot-bq/peignot.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

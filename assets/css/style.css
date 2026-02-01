@@ -118,9 +118,9 @@ footer p {
 
 @font-face {
   font-family: 'Peignot';
-  src: url('/assets/fonts/peignot-bq/peignot.ttf') format('woff2'),
-       url('/assets/fonts/peignot-bq/peignot.ttf') format('woff'),
-       url('/assets/fonts/peignot-bq/peignot.ttf') format('truetype');
+  src: url('assets/fonts/peignot-bq/peignot.ttf') format('woff2'),
+       url('assets/fonts/peignot-bq/peignot.ttf') format('woff'),
+       url('assets/fonts/peignot-bq/peignot.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

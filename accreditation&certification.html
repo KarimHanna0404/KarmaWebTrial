@@ -455,7 +455,7 @@
               </div>
         </div>
 
-        <!-- controls -->
+        controls
         <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -503,21 +503,30 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Ensure carousel autoplays even if another script initialized it -->
   <script>
     window.addEventListener('load', () => {
       const el = document.getElementById('certCarousel');
       if (!el || !window.bootstrap) return;
-
+  
+      // If something already initialized it, kill it
       const existing = bootstrap.Carousel.getInstance(el);
       if (existing) existing.dispose();
-
-      new bootstrap.Carousel(el, {
+  
+      // Recreate carousel (disable default hover pause)
+      const carousel = new bootstrap.Carousel(el, {
         interval: 7000,
         ride: 'carousel',
-        pause: 'hover',
+        pause: false,   // IMPORTANT: disable default pause
         touch: true,
         wrap: true
+      });
+  
+      // Pause ONLY when hovering the certificate image/card
+      const hoverTargets = el.querySelectorAll('.cert-frame, .cert-image, .cert-card');
+  
+      hoverTargets.forEach((node) => {
+        node.addEventListener('mouseenter', () => carousel.pause());
+        node.addEventListener('mouseleave', () => carousel.cycle());
       });
     });
   </script>

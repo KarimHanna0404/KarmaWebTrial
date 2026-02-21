@@ -504,13 +504,9 @@ footer .nav-link:hover{
 }
 
 /* Nicer indicators */
-.carousel-indicators [data-bs-target]{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background-color: var(--karma-green);
-  padding-top: 10px;
-  margin-bottom: 90px;
+/* Hide the indicators (green bars/dots) ONLY for certCarousel */
+#certCarousel .carousel-indicators {
+  display: none !important;
 }
 
 /* Subtle spacing for descriptions */

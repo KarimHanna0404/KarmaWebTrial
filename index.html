@@ -1632,17 +1632,25 @@
       const el = document.getElementById('partnersCarousel');
       if (!el) return;
   
-      // If something (like main.js) already initialized it, kill it
+      // If something already initialized it, kill it
       const existing = bootstrap.Carousel.getInstance(el);
       if (existing) existing.dispose();
   
-      // Recreate with autoplay ON
-      new bootstrap.Carousel(el, {
+      // Recreate carousel (disable default hover pause)
+      const carousel = new bootstrap.Carousel(el, {
         interval: 6000,
         ride: 'carousel',
-        pause: 'hover',
+        pause: false,   // IMPORTANT: disable default pause
         touch: true,
         wrap: true
+      });
+  
+      // Pause ONLY when hovering product cards/images
+      const hoverTargets = el.querySelectorAll('.product-card');
+  
+      hoverTargets.forEach((card) => {
+        card.addEventListener('mouseenter', () => carousel.pause());
+        card.addEventListener('mouseleave', () => carousel.cycle());
       });
     });
   </script>

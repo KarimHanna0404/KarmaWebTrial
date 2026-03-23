@@ -74,6 +74,7 @@
               <li><a class="dropdown-item" href="#">About</a></li>
               <li><a class="dropdown-item" href="#">Product Range</a></li>
               <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><a class="dropdown-item" href="KarmaSteelHome.html">Home</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Request a Quote</a></li>
             </ul>
@@ -192,7 +193,7 @@
 
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="1" id="consent" required>
+                    <input class="form-check-input" type="checkbox" name="consent" value="1" id="consent" required>
                     <label class="form-check-label required" for="consent">
                       I agree to be contacted about my inquiry.
                     </label>
@@ -263,48 +264,61 @@
 
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    emailjs.init({ publicKey: "service_pwgm7ca" }); 
-  </script>
+<script>
+  emailjs.init({
+    publicKey: "R9vLnk339wNrtvfLQ"
+  });
+</script>
 
   <!-- Custom Script -->
   <script>
     const loader = document.getElementById('app-loader');
     const showLoader = () => loader?.classList.add('show');
     const hideLoader = () => loader?.classList.remove('show');
-
+  
     (function () {
       const form = document.getElementById('contactSalesForm');
-
+  
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         form.classList.add('was-validated');
-
+  
         const trap = form.querySelector('input[name="company_website"]');
         if (trap && trap.value.trim() !== '') return;
-
+  
         if (!form.checkValidity()) return;
-
-        const interests = Array.from(form.querySelectorAll('.form-check-input[type="checkbox"]:checked'))
-          .map(cb => cb.value);
-
+  
+        const interests = Array.from(
+          form.querySelectorAll('.form-check-input[type="checkbox"]:checked')
+        ).map(cb => cb.value);
+  
         const payload = {
           full_name: form.fullName.value.trim(),
           company: form.company.value.trim(),
           email: form.email.value.trim(),
-          phone: form.phone.value.trim(),
+          phone: form.phone.value.trim() || "N/A",
           industry: form.industry.value,
           interests: interests.length ? interests.join(", ") : "N/A",
           message: form.message.value.trim(),
-          consent: !!form.consent.checked,
-          page: location.href,
-          ts: new Date().toISOString(),
+          consent: form.consent.checked ? "Yes" : "No",
+          page: window.location.href,
+          ts: new Date().toLocaleString("en-CA", {
+            dateStyle: "medium",
+            timeStyle: "short"
+          }),
           reply_to: form.email.value.trim()
         };
-
+  
         try {
           showLoader();
-          await emailjs.send("service_pwgm7ca", "template_lqe880h", payload);
+  
+          const response = await emailjs.send(
+            "service_pwgm7ca",
+            "template_lqe880h",
+            payload
+          );
+  
+          console.log("SUCCESS!", response.status, response.text);
           form.reset();
           form.classList.remove('was-validated');
           alert("✅ Thanks! Your request has been sent.");
